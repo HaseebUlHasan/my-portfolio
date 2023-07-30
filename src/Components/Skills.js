@@ -5,6 +5,11 @@ import Card from "react-bootstrap/esm/Card";
 import html from "./assets/html.png";
 import css from "./assets/css.png";
 import js from "./assets/js.png";
+import angular from  "./assets/angular.png";
+import next from  "./assets/next.png";
+import material from  "./assets/material.png";
+import bootstraf from  "./assets/bootstraf.png";
+import window from "./assets/windows.png";
 import react from "./assets/react.png";
 
 
@@ -80,6 +85,34 @@ const Skills = () => {
               <Card.Img variant="top" src={react}  />
               <Card.Body>
                 <Card.Text>React JS</Card.Text>
+              </Card.Body>
+            </Card>
+
+            <Card style={{ width: "8rem" , height: "9rem" }}>
+              <Card.Img variant="top" src={next}  />
+              <Card.Body>
+                <Card.Text> NextJS</Card.Text>
+              </Card.Body>
+            </Card>
+
+            <Card style={{ width: "8rem" , height: "9rem" }}>
+              <Card.Img variant="top" src={angular}  style={{width:"100%"}}/>
+              <Card.Body>
+                <Card.Text> Angular </Card.Text>
+              </Card.Body>
+            </Card>
+
+            <Card style={{ width: "8rem" , height: "9rem" }}>
+              <Card.Img variant="top" src={bootstraf}  />
+              <Card.Body>
+                <Card.Text> Bootstraf </Card.Text>
+              </Card.Body>
+            </Card>
+
+            <Card style={{ width: "8rem" , height: "9rem" }}>
+              <Card.Img variant="top" src={material}  />
+              <Card.Body>
+                <Card.Text> Material </Card.Text>
               </Card.Body>
             </Card>
       </Row>

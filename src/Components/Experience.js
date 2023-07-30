@@ -36,12 +36,12 @@ const Experience = () => {
             <Card.Body>
               <Card.Title>
                 {" "}
-                <WorkIcon fontSize="large" /> Front End Developer{" "}
+                <WorkIcon fontSize="large" /> Front End Developer / UI Designer {" "}
               </Card.Title>
               <Card.Text>
-                <h3> Cloudtek, Islamabad</h3>
+                <h3> Skyloov Property Portal </h3>
               </Card.Text>
-              <Card.Title> Nov 2021- June 2022</Card.Title>
+              <Card.Title> Oct 2022 - Present</Card.Title>
             </Card.Body>
           </Card>
           <br />
@@ -49,7 +49,20 @@ const Experience = () => {
             <Card.Body>
               <Card.Title>
                 {" "}
-                <WorkIcon  fontSize="large"/> Front End Intern{" "}
+                <WorkIcon fontSize="large" /> Front End Developer{" "}
+              </Card.Title>
+              <Card.Text>
+                <h3> Cloudtek, Islamabad</h3>
+              </Card.Text>
+              <Card.Title> Nov 2021 - June 2022</Card.Title>
+            </Card.Body>
+          </Card>
+          <br />
+          <Card style={{ textAlign: "justify", backgroundColor: "#f565394d" }}>
+            <Card.Body>
+              <Card.Title>
+                {" "}
+                <WorkIcon  fontSize="large"/> Junior Front End Developer{" "}
               </Card.Title>
               <Card.Text>
                 <h3> Asimplify, Islamabad</h3>

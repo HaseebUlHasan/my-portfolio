@@ -10,7 +10,6 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import SendIcon from "@mui/icons-material/Send";
 import TwitterIcon from "@mui/icons-material/Twitter";
-// import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
@@ -19,7 +18,7 @@ const Contact = () => {
   const [password, setPassword] = useState("");
   const [data, setData] = useState([]);
 
-  // const notify = () => toast("Message has been sent");
+  
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -27,9 +26,9 @@ const Contact = () => {
     const data = [{ name: name, email: email, password: password }];
     setData([...data]);
 
-    setName(" ");
-    setEmail(" ");
-    setPassword(" ");
+    setName("");
+    setEmail("");
+    setPassword("");
   };
 
   return (
@@ -105,7 +104,7 @@ const Contact = () => {
               <div style={{ margin: "30px" }}>
                 <h4>
                   {" "}
-                  <CallIcon fontSize="large" /> +92 3405216721{" "}
+                  <CallIcon fontSize="large" /> +971 50 6322498 / +971 55 8526547{" "}
                 </h4>{" "}
                 <br />
                 <h4>
@@ -114,7 +113,7 @@ const Contact = () => {
                 </h4>
                 <br />
                 <h4>
-                  <HomeIcon fontSize="large" /> Swabi, KPK Pakistan{" "}
+                  <HomeIcon fontSize="large" /> Sharjah / Dubai, UAE{" "}
                 </h4>
               </div>
               <div

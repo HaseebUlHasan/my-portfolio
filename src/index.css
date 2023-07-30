@@ -13,3 +13,10 @@ code {
     monospace;
 }
 
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: "5px";
+    margin: "5px"
+  }
+}

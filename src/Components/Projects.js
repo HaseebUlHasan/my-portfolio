@@ -23,6 +23,9 @@ import khareedbaij1 from "./assets/olxClone/khareedbaij1.JPG";
 import khareedbaij2 from "./assets/olxClone/khareedbaij2.JPG";
 import khareedbaij3 from "./assets/olxClone/khareedbaij3.JPG";
 import khareedbaij4 from "./assets/olxClone/khareedbaij4.JPG";
+import json from "./assets/json/json.png";
+import json1 from "./assets/json/json1.JPG";
+import json2 from "./assets/json/json2.JPG";
 
 
 
@@ -32,7 +35,7 @@ const Projects = () => {
   const [show3, setShow3] = useState(false);
   const [show4, setShow4] = useState(false);
   const [show5, setShow5] = useState(false);
-
+  const [show6, setShow6] = useState(false);
 
 
   return (
@@ -45,9 +48,9 @@ const Projects = () => {
       >
         <h1 style={{ textAlign: "justify" }}> Project </h1>
 
-       <Row style = {{display: "flex" , justifyContent: "space-around" , margin: "50px"}}>
-       <Col lg = "2" >
-          <Card style={{ width: "15rem"  }}>
+       <Row style = {{display: "flex" , justifyContent: "space-around" , margin: "50px" }}>
+     
+          <Card style={{width : "12rem" , height : "10rem"  }}>
             <Card.Img variant="top" src={dice} onClick={() => setShow(true)} />
             <Card.Body>
               <Card.Title style = {{color : "black"}}>Dice Game</Card.Title>
@@ -72,6 +75,11 @@ const Projects = () => {
               </Carousel>
             </Modal.Body>
             <Modal.Footer>
+            <a href = "https://playing-dice.netlify.app/">
+             <Button variant="primary">
+                View Demo
+              </Button>
+             </a>
               <a href = "https://github.com/HaseebUlHasan/Dice-Game-Single-and-Double-Players-React-Hooks">
                 <Button variant="primary">
                 Source Code
@@ -84,10 +92,8 @@ const Projects = () => {
             
             </Modal.Footer>
           </Modal>
-        </Col>
-
-        <Col lg ="2">
-          <Card style={{ width: "15rem" }}>
+        
+          <Card style={{width : "12rem" , height : "10rem"}}>
             <Card.Img variant="top" src={tictoctoe} onClick={() => setShow2(true)} />
             <Card.Body>
               <Card.Title style = {{color : "black"}}>Tic-Toc-Toe </Card.Title>
@@ -118,6 +124,11 @@ const Projects = () => {
               </Carousel>
             </Modal.Body>
             <Modal.Footer>
+            <a href = "https://tictoctoe-game.netlify.app/">
+             <Button variant="primary">
+                View Demo
+              </Button>
+             </a>
               <a href = "https://github.com/HaseebUlHasan/Tic-Toc-Toe-computer-vs-Player-React">
                 <Button variant="primary">
                 Source Code
@@ -131,10 +142,8 @@ const Projects = () => {
               </a>
             </Modal.Footer>
           </Modal>
-        </Col >
-
-        <Col lg ="2">
-          <Card style={{ width: "15rem" }}>
+      
+          <Card style={{width : "12rem" , height : "10rem"}}>
             <Card.Img variant="top" src={netflix} onClick={() => setShow3(true)} />
             <Card.Body>
               <Card.Title style = {{color : "black"}}>Netflix Clone</Card.Title>
@@ -177,6 +186,11 @@ const Projects = () => {
               </Carousel>
             </Modal.Body>
             <Modal.Footer>
+            <a href = "https://netflix-my-movie-clone.netlify.app/">
+             <Button variant="primary">
+                View Demo
+              </Button>
+             </a>
               <a href = "https://github.com/HaseebUlHasan/netflix-Clone-React">
                 <Button variant="primary">
                 Source Code
@@ -190,13 +204,11 @@ const Projects = () => {
               </a>
             </Modal.Footer>
           </Modal>
-        </Col >
-
-        <Col lg ="2">
-          <Card style={{ width: "15rem" }}>
+        
+          <Card style={{width : "12rem" , height : "10rem"}}>
             <Card.Img variant="top" src={book} onClick={() => setShow4(true)} />
             <Card.Body>
-              <Card.Title style = {{color : "black"}}>Outlast Book Api</Card.Title>
+              <Card.Title style = {{color : "black"}}>Outlast Book </Card.Title>
             </Card.Body>
           </Card>
 
@@ -224,6 +236,11 @@ const Projects = () => {
               </Carousel>
             </Modal.Body>
             <Modal.Footer>
+            <a href = "https://outlast-book.netlify.app/">
+             <Button variant="primary">
+                View Demo
+              </Button>
+             </a>
               <a href = "https://github.com/HaseebUlHasan/Outlast-Bookshop-API-React">
                 <Button variant="primary" >
                 Source Code
@@ -237,10 +254,8 @@ const Projects = () => {
               </a>
             </Modal.Footer>
           </Modal>
-        </Col>
-      
-        <Col lg ="2">
-          <Card style={{ width: "15rem" }}>
+       
+          <Card style={{width : "12rem" , height : "10rem"}}>
             <Card.Img variant="top" src={olx} onClick={() => setShow5(true)} />
             <Card.Body>
               <Card.Title style = {{color : "black"}}>OLX Clone</Card.Title>
@@ -295,7 +310,48 @@ const Projects = () => {
               </a>
             </Modal.Footer>
           </Modal>
-        </Col>
+
+          <Card style={{width : "12rem" , height : "10rem"}}>
+            <Card.Img variant="top" src={json} onClick={() => setShow6(true)} />
+            <Card.Body>
+              <Card.Title style = {{color : "black"}}> User Posts</Card.Title>
+            </Card.Body>
+          </Card>
+
+          <Modal show={show6} onHide={() => setShow6(false)} size="lg">
+            <Modal.Body>
+              <Carousel variant="dark">
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={json1}
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={json2}
+                  />
+                </Carousel.Item>
+                
+              </Carousel>
+            </Modal.Body>
+            <Modal.Footer>
+              
+             <a href = "https://user-data-posts.netlify.app/">
+             <Button variant="primary">
+                View Demo
+              </Button>
+             </a>
+             
+              <a href="">
+                {" "}
+                <Button variant="secondary" onClick={() => setShow6(false)}>
+                  Close
+                </Button>{" "}
+              </a>
+            </Modal.Footer>
+          </Modal>
        </Row>
       </Row>
     </>

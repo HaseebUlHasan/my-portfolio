@@ -5,17 +5,17 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import cv from "./Haseeb ul hasan Cv.pdf";
+import cv from "./HaseebulHasan Cv.pdf";
+import coverletter from "./HaseebulHasan CoverLetter.pdf";
 import { Button } from "react-bootstrap";
-
-
+import Typewriter from "typewriter-effect";
 
 const Personal_Information = () => {
   return (
     <>
       <Row style={{ backgroundColor: "hsl(0, 0%, 90%)", padding: "50px" }}>
         <Col lg="3"></Col>
-        <Col lg="6">
+        <Col md="6">
           <img
             src={haseeb}
             alt="Haseeb"
@@ -28,8 +28,26 @@ const Personal_Information = () => {
           />
           <div style={{ textAlign: "center" }}>
             <h3> Hey, </h3>
-            <h1> I`m Haseeb Ul Hasan </h1>
-            <h3> Web Developer / Software Engineer</h3>
+            {/* <h1> I`m Haseeb Ul Hasan</h1> */}
+            {/* <h3> Web Developer / Software Engineer</h3> */}
+            <h1 style={{color:""}}>
+              <Typewriter
+                onInit={(typewriter) => {
+                  typewriter
+                    .typeString("I`m Haseeb Ul Hasan")
+                    .pauseFor(1000)
+                    .deleteAll()
+                    .typeString("I`m a Front-end Developer")
+                    .pauseFor(1000)
+                    .deleteAll()
+                    .typeString("I`m a UI Designer")
+                    .pauseFor(1000)
+                    .deleteAll()
+                    .typeString("I`m a Software Engineer")
+                    .start();
+                }}
+              />
+            </h1>
             <div style={{ margin: "30px" }}>
               <Button
                 style={{
@@ -51,6 +69,28 @@ const Personal_Information = () => {
                 >
                   {" "}
                   Download Resume
+                </a>
+              </Button>
+              <Button
+                style={{
+                  border: "2px solid rgb(245, 101, 57)",
+                  borderRadius: "30px",
+                  backgroundColor: "rgb(245, 101, 57",
+                  marginRight: "20px",
+                }}
+              >
+                <a
+                  href={coverletter}
+                  download={coverletter}
+                  style={{
+                    textAlign: "center",
+                    padding: "10px",
+                    color: "#000",
+                    textDecoration: "none",
+                  }}
+                >
+                  {" "}
+                  Download Cover Letter
                 </a>
               </Button>
               <Button
@@ -125,9 +165,7 @@ const Personal_Information = () => {
             </a>
           </div>
         </Col>
-        <Col lg="3">
-
-        </Col>
+        <Col lg="3"></Col>
       </Row>
     </>
   );
